@@ -1,0 +1,3 @@
+mysql -h rdbs-step4-australia-east.mysql.database.azure.com  -P
+ 3306  -u tech0sql1  --ssl-ca="/Users/seishu/Documents/Tech0_POSアプリ/backend/DigiCertGlobalRootCA.crt.pem" 
+--ssl-mode=VERIFY_CA  -p
