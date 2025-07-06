@@ -81,3 +81,4 @@ def purchase(data: schemas.TransactionIn, db: Session = Depends(get_db)):
     except Exception as e:
         db.rollback()
         raise HTTPException(status_code=500, detail=f"購入処理に失敗しました: {str(e)}")
+    

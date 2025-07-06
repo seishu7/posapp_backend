@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from . import models
-from . import schemas
+import models
+import schemas
 from datetime import datetime
 print("✔ datetime successfully imported in crud.py")
 print("✔ current time is", datetime.now())
