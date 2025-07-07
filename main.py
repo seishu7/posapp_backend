@@ -32,6 +32,10 @@ def get_db():
     finally:
         db.close()
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello from POS backend!"}
+
 # 商品取得API
 @app.get("/product", response_model=schemas.ProductOut)
 def get_product(code: str, db: Session = Depends(get_db)):
