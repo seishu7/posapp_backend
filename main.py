@@ -15,7 +15,7 @@ app = FastAPI()
 # CORS設定（本番では限定的に）
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # 本番では ["https://your-frontend-url"] に絞る
+    allow_origins=["https://posapp-backend.onrender.com"],  # 本番では ["https://your-frontend-url"] に絞る
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
