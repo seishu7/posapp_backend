@@ -38,7 +38,7 @@ def read_root():
 
 # 商品取得API
 @app.get("/product", response_model=schemas.ProductOut)
-def get_product(code: str, db: Session = Depends(get_db)):
+def get_product(code: int, db: Session = Depends(get_db)):
     product = crud.get_product_by_code(db, code)
     if not product:
         raise HTTPException(status_code=404, detail="商品が見つかりません")

@@ -5,7 +5,7 @@ from datetime import datetime
 print("✔ datetime successfully imported in crud.py")
 print("✔ current time is", datetime.now())
 
-def get_product_by_code(db: Session, code: str):
+def get_product_by_code(db: Session, code: int):
     return db.query(models.Product).filter(models.Product.CODE == code).first()
 
 def register_transaction(db: Session, emp_cd: str, products: list[schemas.TransactionProductIn]):
