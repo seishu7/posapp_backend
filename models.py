@@ -5,7 +5,7 @@ from datetime import datetime
 class Product(Base):
     __tablename__ = "商品マスタ"
     PRD_ID = Column(Integer, primary_key=True, autoincrement=False)
-    CODE = Column(CHAR(13), unique=True, nullable=False)
+    CODE = Column(String(13), unique=True, nullable=False)
     NAME = Column(String(50), nullable=False)
     PRICE = Column(Integer, nullable=False)
 
