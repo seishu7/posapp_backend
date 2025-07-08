@@ -15,7 +15,7 @@ app = FastAPI()
 # CORS設定（本番では限定的に）
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://posapp-frontend2-f2yva3r4e-oltoberry7-2466s-projects.vercel.app"],  # 本番では ["https://your-frontend-url"] に絞る
+    allow_origins=["https://posapp-frontend2.vercel.app"],  # 本番では ["https://your-frontend-url"] に絞る
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
