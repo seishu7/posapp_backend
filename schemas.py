@@ -17,4 +17,6 @@ class TransactionProductIn(BaseModel):
 
 class TransactionIn(BaseModel):
     emp_cd: Optional[str] = "9999999999"
+    store_cd: Optional[str] = "001"
+    pos_no: Optional[str] = "001"
     products: List[TransactionProductIn]
