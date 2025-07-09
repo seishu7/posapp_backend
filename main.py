@@ -17,7 +17,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://posapp-frontend2.vercel.app",  # 本番URL
-        "https://posapp-frontend2-qcuou3esh-oltoberry7-2466s-projects.vercel.app",  # Preview URL（例）
+        "https://posapp-frontend2-cq1pwnkim-oltoberry7-2466s-projects.vercel.app",  # Preview URL（例）
         "http://localhost:3000",  # 開発用
     ],
     allow_credentials=True,
